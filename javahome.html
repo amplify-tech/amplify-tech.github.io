@@ -1,34 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Amplify Tech</title>
+  <title>C++</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="homestyle.css">
-
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="10" onload="openNav()">
 
-<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="10">
+<body onload="openNav()">
+
+<nav class="navbar navbar-inverse navbar-fixed-top" style="background-color: #db4dff;">
   <div class="container-fluid">
     <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>                        
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
       </button>
-      <button class="openbtn navbar-brand"  style="background-color: #3385ff; color: black;" onclick="openNav()">☰ Sidebar <--></button>
-      <a class="navbar-brand" style="font-size: 23px; color: #990033;" href="index.html">AmplifyTech</a>
-
+      <button class="openbtn navbar-brand"  style="background-color: #3385ff; color: black;" onclick="openNav()">☰</button>
+      <a class="navbar-brand" style="color: black; margin-left: 2px;" href="index.html">Amplifytech</a>
     </div>
-    <div>
-      <div class="collapse navbar-collapse"  id="myNavbar" style="color: blue;">
-        <ul class="nav navbar-nav" >
-          <li ><a href="cpphome.html">C++</a></li>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+          <li><a href="cpphome.html">C++</a></li>
           <li><a href="pyhome.html">Python</a></li>
           <li class="active"><a href="javahome.html">Java</a></li>
 
@@ -47,19 +44,18 @@
               <li><a href="postgres/home.html">postgres</a></li>
             </ul>
           </li>
-        </ul>
-      </div>
+      </ul>
     </div>
   </div>
-</nav>    
-    
-<div class="container-fluid">
-
-<div id="mySidebar"  class="sidebar">
+</nav>
+  
+<div class="container">
+  <br><br><br><br>
+<div id="mySidebar" class="sidebar">
   <p style="font-size: 25px;">Topics</p>
-  <p class="activetopic"> <a href="#">Intro</a> </p>
-  <a href="#">Syntex</a>
-  <a href="#">Variables</a>
+  <p class="activetopic"> <a href="#intro">Intro</a> </p>
+  <a href="#temp">Syntex</a>
+  <a href="#var">Variables</a>
   <a href="#">String</a>
   <a href="#">Input-Ouput</a>
   <a href="#">If else</a>
@@ -75,34 +71,23 @@
   <a href="#">Vector</a>
   <a href="#">Map</a>
   <a href="#">File input-output</a>
- 
-</div>
+ </div>
 
-<div id="main">
-  <h1> Java </h1>
-  <h3>Intro</h3>
+  <div id="main" class="mynotes">
 
+  <h1 class="maintopic"> Java </h1>
+ <a href=""> <p class="subtopic" id="intro">Intro </p> </a>
+ <p> filename:- filename.class <br>
+   Run program :- python3 filename <br>
 
-  <h1>template</h1>
-  <iframe src="cpptohtml/template.html" id="frame1" class="mycode"></iframe>
+  <a href=""> <p class="subtopic" id="temp">Output </p> </a>
+  <iframe src="cpptohtml/output.html"  class="mycode"></iframe>
 
-  <h1>first code</h1>
-  <iframe src="cpptohtml/first.html" class="mycode"></iframe>
+  </div>
 
-  <h1>cout</h1>
-  <iframe src="cpptohtml/cout.html" class="mycode"></iframe>
-
-  <h1>var</h1>
-  <iframe src="cpptohtml/var.html" class="mycode"></iframe>
-
-  <h1>algo</h1>
-  <iframe src="cpptohtml/algo.html" class="mycode"></iframe>
-  <h1>end</h1>
 
 </div>
-
-<script src="homescript.js"> </script>
-
+<script src="homescript.js"></script>
 </div>
 
 </body>
