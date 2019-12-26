@@ -1,0 +1,125 @@
+/*homepage style by akram*/
+
+.sidebar {
+  height: 95%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 35px;
+  left: 0;
+  background-color: #99ffcc;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #669900;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  /*padding: 10px 15px;*/
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: ##33ff33;
+}
+
+ .nav.navbar-nav li a {
+    color: blue;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 8px 2px 8px 8px;
+  max-width: 700px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 500px) {
+  .sidebar {padding-top: 15px; width: 130px;}
+  .sidebar a {font-size: 18px;}
+  #main{width: 100%;}
+
+}
+
+  .mycode{
+    width: 100%;
+    min-height: 220px;
+    height: auto;
+    /*scroll-behavior: 45px;*/
+
+  }
+  .activetopic{
+    background-color: black;
+    color: red;
+  }
+
+
+  .mynotes{
+    margin-left:5%;
+    padding-right: 5%;
+    width: 100%;
+    max-width: 800px;
+    font-size: 20px;
+  }
+  .maintopic{
+    text-align: center;
+    color: #660066;
+    background-color: yellow;
+    font-size: 38px;
+  }
+  .subtopic{
+    align-self: center;
+    color: blue ;
+    font-size: 28px;
+  }
+  .imgnotes{
+    width: 80%;
+    max-width: 800px;
+    height: auto;
+    max-height: 450px;
+  }
+  @media screen and (max-width: 500px) {
+  .mynotes{
+    margin-left:5%;
+    padding-right: 5%;
+    width: 100%;
+    max-width: 800px;
+    font-size: 16px;
+  }
+  .maintopic{
+    text-align: center;
+    color: blue;
+    background-color: yellow;
+    font-size: 32px;
+  }
+  .subtopic{
+    align-self: center;
+    color: #660066;
+    font-size: 24px;
+  }
+  } /*@media screen and (max-height: 500px) { }*/
+
