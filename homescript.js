@@ -16,3 +16,11 @@ function openNav() {
       x=0;
     }
 }
+function myhide(button) {
+  var x = button.parentNode.querySelector("div");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}

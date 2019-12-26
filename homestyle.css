@@ -1,55 +1,49 @@
-/*homepage style by akram*/
-
 .sidebar {
-  height: 95%;
+  height: 100%;
   width: 0;
   position: fixed;
   z-index: 1;
-  top: 35px;
+  top: 0;
   left: 0;
-  background-color: #99ffcc;
+  background-color: #1aff8c;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
 }
 
 .sidebar a {
-  padding: 8px 8px 8px 32px;
+  padding: 8px 5px 8px 5px;
   text-decoration: none;
-  font-size: 25px;
-  color: #669900;
+  font-size: 20px;
+  color: black;
   display: block;
   transition: 0.3s;
 }
 
 .sidebar a:hover {
-  color: #f1f1f1;
-}
-
-.sidebar .closebtn {
-  position: absolute;
-  top: 25px;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+  color: white;
 }
 
 .openbtn {
   font-size: 20px;
   cursor: pointer;
-  background-color: #111;
+  background-color: pink;
   color: white;
-  /*padding: 10px 15px;*/
-  border: none;
+  padding: 10px 15px;
+  border: 2px solid black;
 }
 
 .openbtn:hover {
-  background-color: ##33ff33;
+  background-color: pink;
 }
-
  .nav.navbar-nav li a {
     color: blue;
+    font-size: 20px;
 }
+  .activetopic a {
+    background-color: black;
+    color: white;
+  }
 
 #main {
   transition: margin-left .5s;
@@ -58,29 +52,22 @@
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 500px) {
-  .sidebar {padding-top: 15px; width: 130px;}
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
   .sidebar a {font-size: 18px;}
-  #main{width: 100%;}
-
 }
 
-  .mycode{
+ .mycode{
     width: 100%;
+    max-width: 800px;
     min-height: 220px;
     height: auto;
     /*scroll-behavior: 45px;*/
 
   }
-  .activetopic{
-    background-color: black;
-    color: red;
-  }
-
-
   .mynotes{
     margin-left:5%;
-    padding-right: 5%;
+    padding-right: 2%;
     width: 100%;
     max-width: 800px;
     font-size: 20px;
@@ -122,4 +109,20 @@
     font-size: 24px;
   }
   } /*@media screen and (max-height: 500px) { }*/
-
+.btnanm {
+  width: 100%;
+  }
+.btnanm:hover {
+  background-color: lightblue;
+}
+.outputdiv {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.output{
+  display: none;
+  white-space: pre-wrap; 
+  background-color: black;
+  color: white;
+  font-size: 18px;
+}
