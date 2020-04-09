@@ -109,12 +109,12 @@
   }
   .subtopic{
     align-self: center;
-    color: #660066;
+    color: blue;
     font-size: 24px;
   }
   .subtopic2{
     align-self: center;
-    color: red;
+    color: #9966ff;
     font-size: 22px;
   }
   } /*@media screen and (max-height: 500px) { }*/
