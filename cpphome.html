@@ -9,6 +9,27 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="homestyle.css">
 </head>
+<style>
+  details{
+    background-color: #e6e6e6;  
+  }
+  summary{
+    background-color: #1aff8c;
+    outline: none;
+    color: black;
+    font-size: 18px;
+  }
+  summary:hover{
+    background-color: white;
+  }
+  .small{
+    height: 130px;
+  }
+  .medium{
+    height: 190px;
+  }
+  /*active ,visited*/
+</style>
 
 <body onload="openNav()">
 
@@ -51,159 +72,211 @@
   
 <div class="container">
   <br><br><br><br>
-<div id="mySidebar" class="sidebar">
+<div id="mySidebar" class="sidebar" style="padding-left: 4px;">
   <p style="font-size: 25px;">Topics</p>
-  <p class="activetopic"> <a href="#intro">Intro</a> </p>
-  <a href="#temp">Syntax</a>
-  <a href="#var">Variables</a>
-  <a href="#str">String</a>
-  <a href="#out">Ouput</a>
-  <a href="#inpt">Input</a>
-  <a href="#if">If else</a>
-  <a href="#for">For & while loop</a>
-  <a href="#arr">Array</a>
-  <a href="#">State</a>
-  <a href="#">Function</a>
-  <a href="#">Recursion</a>
-  <a href="#">Sorting</a>
-  <a href="#">Pointer</a>
-  <a href="#">Class-Structure</a>
-  <a href="#">Enum</a>
-  <a href="#">Vector</a>
-  <a href="#">Map</a>
-  <a href="#">File input-output</a>
+  <p class="activetopic"> <a href="#intro">Summary</a> </p>
+
+
+<details><summary> Commands to Run </summary>
+  <a href="#cmnd"> run program </a>
+</details> 
+<details><summary>Base Template</summary>
+  <a href="#syn"> syntax </a>
+
+</details> 
+<details><summary>Datatypes</summary>
+  <a href="#"> variables </a> 
+  <a href="#"> string </a> 
+  <a href="#"> conversion </a> 
+
+</details>
+<details><summary>Output</summary>
+  <a href="#"> cout </a> 
+  <a href="#"> formatting </a> 
+
+</details> 
+<details><summary>Input</summary>
+  <a href="#"> cin </a>
+
+</details> 
+<details><summary>Conditional stmnt</summary>
+  <a href="#"> if else </a>
+  <a href="#"> switch </a>
+
+</details> 
+<details><summary>Loop</summary>
+  <a href="#"> for loop </a>
+  <a href="#"> while loop </a>
+
+</details> 
+<details><summary>Function</summary>
+  <a href="#"> function </a>
+  <a href="#"> recursion </a>
+  <a href="#"> passby value  </a>
+  <a href="#"> passby reference   </a>
+  <a href="#"> passby pointer  </a>
+  <a href="#"> lambda </a> 
+  <a href="#"> function overload </a>  
+
+</details> 
+<details><summary>Pointer</summary>
+  <a href="#"> memory address </a>
+
+</details> 
+<details><summary>OOP (Class)</summary>
+  <a href="#"> class </a>
+  <a href="#"> structure </a>
+  <a href="#"> object </a>
+  <a href="#"> member function </a>
+  <a href="#"> member variable </a> 
+  <a href="#"> constructor </a> 
+  <a href="#"> destructor  </a> 
+  <a href="#"> static </a>
+  <a href="#"> inheritance </a>
+  <a href="#"> access Modifier </a>
+  <a href="#"> parent class </a>
+  <a href="#"> child class </a>
+  <a href="#"> friend class </a>
+  <a href="#"> nested </a>
+  <a href="#"> encapsulation </a>
+  <a href="#"> polymorphism </a>
+
+
+</details> 
+<details><summary>Container</summary>
+<a href="#"> array    </a>
+<a href="#"> vector   </a>
+<a href="#"> deque   </a>
+<a href="#"> forward_list    </a>
+<a href="#"> list   </a>
+<a href="#"> stack   </a>
+<a href="#"> queue   </a>
+<a href="#"> priority_queue   </a>
+<a href="#"> set   </a>
+<a href="#"> multiset   </a>
+<a href="#"> map   </a>
+<a href="#"> multimap   </a>
+<a href="#"> unordered_set    </a>
+<a href="#"> unordered_multiset    </a>
+<a href="#"> unordered_map    </a>
+<a href="#"> unordered_multimap  </a>
+
+</details> 
+<details><summary>Iterator</summary>
+  <a href="#"> iterator </a>
+
+</details> 
+<details><summary>Data structure</summary>
+  <a href="#"> container </a>
+  <a href="#"> tree </a>
+  <a href="#"> graph </a>
+  <a href="#"> hash tble </a>
+  <a href="#"> heap </a>
+
+</details> 
+<details><summary>Exception Handling</summary>
+  <a href="#"> try-catch-throw </a>
+
+</details> 
+<details><summary>File Handling</summary>
+  <a href="#"> file as input </a>
+  <a href="#"> file as output </a>
+  <a href="#"> update a file </a>
+
+</details> 
+<details><summary>Basic Algorithm</summary>
+  <a href="#"> searching </a>
+  <a href="#"> sorting </a>
+  <a href="#"> here </a>
+
+</details> 
+<details><summary>IMP Algorithm</summary>
+  <a href="#"> here </a>
+
+</details> 
+<details><summary>Basic inbuilt function</summary>
+  <a href="#"> maths function </a>
+
+</details> 
+ <details><summary>IMP inbuilt function </summary>
+  <a href="#"> here </a>
+
+ </details>
+ <details><summary>Extra </summary>
+  <a href="#"> enum </a>
+  <a href="#"> typedef </a>
+
+ </details>
+
  </div>
+
+
 
 <div id="main" class="mynotes">
   <h1 class="maintopic"> C++ </h1>
- <a href=""> <p class="subtopic" id="intro">Intro </p> </a>
- <p> filename:- filename.cpp <br>
-   compile :- g++  filename.cpp <br>
-   Run program :- ./a.out <br>
-   first save file as filename.cpp then compile then run. A file named <i> a.out</i>
-   will automatically create during compilation of cpp program. </p>
-   <img style="width: 100%; height: auto;" src="img/screenshot/run.png" >
 
+ <p class="subtopic" id="cmnd"> Commands to Run  the program</p>
+ <p> <b> filename </b>:- filename.cpp <br>
+     <b> compile  </b>:- g++  filename.cpp <br>
+     <b> Run program  </b>:- ./a.out <br> </p>
+   <div style="background-color: black; color: white; padding: 2px 10px; font-style: italic;">
+     <p>  $ g++ filename.cpp </p>
+     <p>  $ ./a.out </p>
+   </div>
+<br>
 
-  <a href=""> <p class="subtopic" id="temp">Template </p> </a>
-  <p>This is how the syntax of C++ looks. </p>
-  <iframe src="cpptohtml/template.html"  class="mycode"></iframe>
+  <p class="subtopic" id="syn">Basic Template - Syntax </p>
+  <iframe src="shortnote/cpptohtml/template.html"  class="mycode small"></iframe>
+<p class="inc:shortnote/cpptohtml/template.htm"></p>
 
-  <a href=""> <p class="subtopic" id="var">Variables </p> </a>
-  <p>Variables are used to store different values and dealing with them. Datatypes 
-    are the types of variables. Some of the datatypes in cpp are <i>int, float, double, 
+<br>
+  <p class="subtopic" id="datatyp"> Datatypes </p>
+  <p class="subtopic2" id="var"> variables </p>
+  <p>Some of the datatypes in cpp are <i>int, float, double, 
     char, string, bool, void ... </i> </p>
-  <iframe src="cpptohtml/var.html"  class="mycode"></iframe>
+  <iframe src="shortnote/cpptohtml/var.html"  class="mycode small"></iframe>
 
-  <a href=""> <p class="subtopic" id="out">Output </p> </a>
-  <p>cout is used to print something in c++ . </p>
-  <iframe src="cpptohtml/output.html"  class="mycode"></iframe>
-
-  <div class="outputdiv">
-    <button class="btnanm" onclick="myhide(this)">Output</button>
-    <div  class="output">
-      <span style="color: blue;">$</span> g++ example.cpp
-      <span style="color: blue;">$</span> ./a.out
-      45
-      45.214
-      w
-      1
-      hello friends
-      How are you
-      hello friends How are you
-    </div>
-  </div>
-
-  <a href=""> <p class="subtopic" id="inpt">Input </p> </a>
-  <p>In c++ cin is used to take input something. </p>
-  <iframe src="cpptohtml/input.html"  class="mycode"></iframe>
-
-  <div class="outputdiv">
-    <button class="btnanm" onclick="myhide(this)">Output</button>
-    <div  class="output">
-      <span style="color: blue;">$</span> g++ example.cpp
-      <span style="color: blue;">$</span> ./a.out
-      Enter the value of x (integer) 35
-      the value of x is 35
-      Enter the value of y (a character) #
-      the value of y is #
-      Enter the value of z (a bool variable) 5
-      the value of z is 1
-    </div>
-  </div>
-
-  <a href=""> <p class="subtopic" id="str">String </p> </a>
+  <p class="subtopic2" id="str">String </p>
   <p>we need to include a header file as <i> #include&ltstring&gt </i> </p>
-  <iframe src="cpptohtml/string.html"  class="mycode"></iframe>
+  <iframe src="shortnote/cpptohtml/string.html"  class="mycode medium"></iframe>
+
+<br>
+  <p class="subtopic" id="out">Output </p>
+  <p>cout is used to print something in c++ . </p>
+  <iframe src="shortnote/cpptohtml/output.html"  class="mycode small"></iframe>
 
   <div class="outputdiv">
     <button class="btnanm" onclick="myhide(this)">Output</button>
     <div  class="output">
-      <span style="color: blue;">$</span> g++ example.cpp
-      <span style="color: blue;">$</span> ./a.out
-      Amplify Tech
-      Amplify Tech
-      plify Tech
-      mpl
-      2
-      12
-      m
+      hello friends
+      How are you 10
     </div>
   </div>
 
-  <a href=""> <p class="subtopic" id="if">if else </p> </a>
+  <p class="subtopic" id="inpt">Input </p>
+  <p>In c++ cin is used to take input something. </p>
+  <iframe src="shortnote/cpptohtml/input.html"  class="mycode small"></iframe>
+
+ 
+  <p class="subtopic" id="if"> Conditional statement</p>
+  <p class="subtopic2" id="if">if else </p>
   <p>if else is used for conditional statement </p>
-  <iframe src="cpptohtml/ifelse.html"  class="mycode"></iframe>
+  <iframe src="shortnote/cpptohtml/ifelse.html"  class="mycode medium"></iframe>
 
-  <div class="outputdiv">
-    <button class="btnanm" onclick="myhide(this)">Output</button>
-    <div  class="output">
-      <span style="color: blue;">$</span> g++ example.cpp
-      <span style="color: blue;">$</span> ./a.out
-      Enter a number 23
-      23 is greater than 9
-    </div>
-  </div>
 
-  <a href=""> <p class="subtopic" id="for">For loop & while loop </p> </a>
-  <p> A loop is used for executing a block of statements repeatedly until a particular condition is satisfied. Here is a code for printing squares of numbers from 1 to 5 </p>
-  <iframe src="cpptohtml/forloop.html"  class="mycode"></iframe>
+  <p class="subtopic" id="for"> Loop </p>
+  <p> A loop is used for executing a block of statements repeatedly until a particular condition is satisfied. </p>
+  <p class="subtopic2" id="for">for loop </p>
+  <iframe src="shortnote/cpptohtml/forloop.html"  class="mycode small"></iframe>
+  <p class="subtopic2" id="for">while loop </p>
+  <iframe src="shortnote/cpptohtml/whileloop.html"  class="mycode small"></iframe>
 
-  <div class="outputdiv">
-    <button class="btnanm" onclick="myhide(this)">Output</button>
-    <div  class="output">
-      <span style="color: blue;">$</span> g++ example.cpp
-      <span style="color: blue;">$</span> ./a.out
-      while loop :-
-      1
-      4
-      9
-      16
-      25
-      for loop :-
-      1
-      4
-      9
-      16
-      25
-    </div>
-  </div>
-
-  <a href=""> <p class="subtopic" id="arr">Array </p> </a>
+  <p class="subtopic" id="arr">Array </p>
   <p> Array is a collection of variables of same datatypes. Array is
    used when we have to deal with large number variables. an array has a 
   fixed size and its i'th element can be access by <b> <i> arrayname[i] </i></b>. we need to write
   array size during initialisition of array as <b> <i>datatype arrayname[size];</i> </b>   </p>
-  <iframe src="cpptohtml/array.html"  class="mycode"></iframe>
-
-  <div class="outputdiv">
-    <button class="btnanm" onclick="myhide(this)">Output</button>
-    <div  class="output">
-      <span style="color: blue;">$</span> g++ example.cpp
-      <span style="color: blue;">$</span> ./a.out
-      0 1 4 9 16
-    </div>
-  </div>
+  <iframe src="shortnote/cpptohtml/array.html"  class="mycode medium"></iframe>
 
 
 </div>

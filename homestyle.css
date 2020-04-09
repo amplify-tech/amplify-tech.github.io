@@ -13,15 +13,14 @@
 
 .sidebar a {
   padding: 8px 5px 8px 5px;
-  text-decoration: none;
-  font-size: 20px;
-  color: black;
+  font-size: 18px;
+  color: blue;
   display: block;
   transition: 0.3s;
 }
 
 .sidebar a:hover {
-  color: white;
+  color: blue;
 }
 
 .openbtn {
@@ -60,7 +59,7 @@
  .mycode{
     width: 100%;
     max-width: 800px;
-    min-height: 220px;
+    height: 220px;
     height: auto;
     /*scroll-behavior: 45px;*/
 
@@ -81,7 +80,12 @@
   .subtopic{
     align-self: center;
     color: blue ;
-    font-size: 28px;
+    font-size: 26px;
+  }
+  .subtopic2{
+    align-self: center;
+    color: #9966ff ;
+    font-size: 24px;
   }
   .imgnotes{
     width: 80%;
@@ -107,6 +111,11 @@
     align-self: center;
     color: #660066;
     font-size: 24px;
+  }
+  .subtopic2{
+    align-self: center;
+    color: red;
+    font-size: 22px;
   }
   } /*@media screen and (max-height: 500px) { }*/
 .btnanm {
