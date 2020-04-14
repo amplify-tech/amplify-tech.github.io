@@ -69,7 +69,7 @@
     padding-right: 2%;
     width: 100%;
     max-width: 800px;
-    font-size: 20px;
+    font-size: 18px;
   }
   .maintopic{
     text-align: center;
@@ -81,11 +81,13 @@
     align-self: center;
     color: blue ;
     font-size: 26px;
+    line-height: 0.8;
   }
   .subtopic2{
     align-self: center;
     color: #9966ff ;
     font-size: 24px;
+    line-height: 0.8;
   }
   .imgnotes{
     width: 80%;
